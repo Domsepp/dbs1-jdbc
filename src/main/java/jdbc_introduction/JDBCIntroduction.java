@@ -9,8 +9,8 @@ public class JDBCIntroduction {
         String dbName = "imdb";
         //url structure for postgres:
         String databaseURL = "jdbc:postgresql://" + server + ":" + port + "/" + dbName;
-        String userName = "dbs1_psql";
-        String password = "admin";
+        String userName = "postgres";
+        String password = "panter";
         Connection connection = DriverManager.getConnection(databaseURL, userName, password);
         //the connection can be used to get info about the database:
         System.out.println(connection.getMetaData().getDatabaseProductName());
